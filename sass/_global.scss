@@ -1,0 +1,55 @@
+.global {
+  &-heading {
+    font-weight: 600;
+    color: #242f51;
+    line-height: 1.25;
+    font-size: 36px;
+    &--small {
+      font-size: 20px;
+    }
+  }
+
+  &-icon {
+    width: 85px;
+    height: 85px;
+    border-radius: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-shrink: 0;
+  }
+}
+
+.color {
+  &--red {
+    color: $red-color;
+  }
+  &--blue {
+    color: $blue-color;
+  }
+  &--green {
+    color: $green-color;
+  }
+  &--title {
+    color: $title-color;
+  }
+}
+.bg {
+  &--red {
+    background-color: rgba($red-color, 0.1);
+  }
+  &--blue {
+    background-color: rgba($blue-color, 0.1);
+  }
+  &--green {
+    background-color: rgba($green-color, 0.1);
+  }
+}
+
+$margin-bottoms: "10", "20", "25", "30", "40", "50", "60", "70", "80", "90";
+@each $item in $margin-bottoms {
+  .mb-#{$item} {
+    margin-bottom: #{$item} + "px";
+  }
+}

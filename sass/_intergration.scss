@@ -1,0 +1,29 @@
+.intergration {
+  padding-top: 115px;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &-img {
+    transform: translateX(-75px);
+    flex-shrink: 0;
+  }
+  &-content {
+    padding-left: 40px;
+    max-width: 420px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 50px;
+    &-img {
+      width: 100%;
+      transform: none;
+    }
+    &-content {
+      padding-left: 0px;
+      margin-top: 50px;
+    }
+  }
+}

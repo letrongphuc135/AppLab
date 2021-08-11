@@ -1,0 +1,62 @@
+.jackpot {
+  padding-top: 150px;
+  --columns: 3;
+  --gap: 120px;
+  &-container {
+    max-width: 1030px;
+    margin: 0 auto;
+  }
+  &-heading {
+    max-width: 446px;
+    font-size: 40px;
+  }
+  &-header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .line {
+    width: 1px;
+    background-color: #b9b9b8;
+    margin-left: 50px;
+    margin-right: 45px;
+  }
+
+  &-desc {
+    max-width: 410px;
+  }
+  &-list {
+    padding-top: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--gap));
+  }
+
+  &-item {
+    width: calc(100% / var(--columns) - var(--gap));
+    margin-left: var(--gap);
+  }
+
+  @media screen and (max-width: 767px) {
+    --columns: 1;
+    --gap: 0px;
+    padding-top: 10px;
+
+    &-desc {
+      margin-top: 40px;
+    }
+    &-list {
+      padding-top: 20px;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-item-desc {
+      margin-left: 33px;
+    }
+  }
+}

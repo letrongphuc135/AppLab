@@ -1,0 +1,25 @@
+.company {
+  padding-top: 116px;
+
+  &-text {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    img {
+      padding: 0 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .company {
+    &-logo{
+      row-gap: 30px;
+    }
+  }
+}

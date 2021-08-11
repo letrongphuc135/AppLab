@@ -1,0 +1,46 @@
+.download {
+  padding-top: 95px;
+  position: relative;
+  padding-bottom: 105px;
+  &-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &-content {
+    max-width: 55%;
+  }
+  &-heading {
+    margin-bottom: 40px;
+    font-size: 48px;
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+  }
+  &-image {
+    max-width: 45%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .download {
+    &-container {
+      flex-direction: column-reverse;
+    }
+    &-content {
+      max-width: 100%;
+    }
+    &-image {
+      max-width: 100%;
+      position: relative;
+      transform: none;
+      margin-bottom: 20px;
+    }
+  }
+}

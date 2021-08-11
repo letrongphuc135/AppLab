@@ -1,0 +1,15 @@
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  &-link {
+    color: $title-color;
+  }
+
+  &-item {
+    margin-left: 35px;
+  }
+  &-action {
+    margin-left: 55px;
+  }
+}

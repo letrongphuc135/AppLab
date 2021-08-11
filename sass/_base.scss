@@ -1,0 +1,58 @@
+$wrapper: 1600px;
+$container: 1170px;
+$blue-color: #2500f9;
+$orange-color: #fcae61;
+$red-color: #f55767;
+$green-color: #40957f;
+$title-color: #242f51;
+$bg-background: #fff;
+$bg-footer: #09142e;
+
+body {
+  color: $title-color;
+  font-weight: 400;
+  background-color: $bg-background;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.wrapper {
+  max-width: $wrapper;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 40px;
+  text-align: center;
+  border-radius: 50px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  &--primary {
+    background-color: $blue-color;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    padding: 15px 30px;
+    font-size: 13px;
+  }
+}
