@@ -129,6 +129,51 @@ button {
   margin-bottom: 90px;
 }
 
+.slick-arrow {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  color: #ccc;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+}
+.slick-arrow:hover {
+  color: #2500f9;
+  background: #eff3f8;
+}
+
+.slick-next {
+  right: 0;
+}
+.slick-next:before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 25px;
+  top: 50%;
+  left: 0;
+  transform: translate(-12px, -50%);
+  background-color: #ccc;
+}
+
+.slick-prev {
+  right: 75px;
+}
+
+@media screen and (max-width: 767px) {
+  .slick-arrow {
+    transform: translateY(80%);
+  }
+}
 .header {
   padding-top: 90px;
 }
@@ -136,6 +181,9 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header .close-menu {
+  display: none;
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -147,7 +195,7 @@ button {
     top: 0;
     right: 0;
     height: 100%;
-    width: 60%;
+    width: 0%;
     transform: translateX(100%);
     transition: all 0.2s linear;
     padding: 20px;
@@ -156,6 +204,7 @@ button {
     row-gap: 50px;
     align-items: baseline;
     padding-top: 100px;
+    z-index: 10000;
   }
   .header .menu-item {
     margin-left: 0px;
@@ -171,23 +220,19 @@ button {
   }
   .header .menu.is-active {
     transform: translateX(0);
+    width: 60%;
   }
-  .header .menu.is-active + .hambuger a:first-child {
-    display: none;
-  }
-  .header .menu.is-active + .hambuger a:last-child {
+  .header .menu.is-active .close-menu {
     display: inline-block;
-  }
-  .header .menu + .hambuger a:last-child {
-    display: none;
-  }
-  .header .menu + .hambuger a:first-child {
-    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
   }
   .header .hambuger {
     font-size: 30px;
     color: #c5c5c5;
-    z-index: 2;
   }
   .header .hambuger a {
     color: #c5c5c5;
@@ -449,11 +494,9 @@ button {
 .intergration-container {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 .intergration-img {
   transform: translateX(-75px);
-  flex-shrink: 0;
 }
 .intergration-content {
   padding-left: 40px;
@@ -462,6 +505,9 @@ button {
 @media screen and (max-width: 767px) {
   .intergration {
     padding-top: 50px;
+  }
+  .intergration-container {
+    flex-wrap: wrap;
   }
   .intergration-img {
     width: 100%;
@@ -871,6 +917,9 @@ button {
 .footer-icon {
   color: #273043;
   font-size: 32px;
+}
+.footer-icon:hover {
+  color: white;
 }
 .footer-icon.is-active {
   color: white;

@@ -34,6 +34,9 @@
   &-icon {
     color: #273043;
     font-size: 32px;
+    &:hover {
+      color: white;
+    }
     &.is-active {
       color: white;
     }

@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/app.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -39,11 +45,13 @@
               <li class="menu-action">
                 <a href="#" class="btn btn--primary"> Try for free </a>
               </li>
+              <li>
+                <a class="close-menu" href="javascript:void(0)">&times;</a>
+              </li>
             </ul>
-            <div class="hambuger">
-              <a href="javascript:void(0)"><i class="fa fa-bars"></i></a>
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            </div>
+            <a class="hambuger" href="javascript:void(0)"
+              ><i class="fa fa-bars"></i
+            ></a>
           </div>
         </div>
       </header>
@@ -430,33 +438,80 @@
                 The rise of mobile devices transforms the way we consume.
                 elevant channels such as Facebook.
               </div>
-              <div class="client-rating mb-30">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </div>
-              <div class="client-title mb-30">User friendly & Customizable</div>
-              <div class="client-desc mb-60">
-                Bring to the table win-win survival strategies to ensure
-                proactive domination. At the end of the day, going forward, a
-                new normal that has evolved from generation X is on the runway
-                heading towards a streamlined cloud solution. User generated
-                content in real-time will have multiple touchpoints for
-                offshoring.
-              </div>
-              <div class="client-author">
-                <div class="client-author-image">
-                  <img src="./images/img-client.png" alt="" />
+              <div class="client-list">
+                <div class="client-item">
+                  <div class="client-rating mb-30">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <div class="client-title mb-30">
+                    User friendly & Customizable
+                  </div>
+                  <div class="client-desc mb-60">
+                    Bring to the table win-win survival strategies to ensure
+                    proactive domination. At the end of the day, going forward,
+                    a new normal that has evolved from generation X is on the
+                    runway heading towards a streamlined cloud solution. User
+                    generated content in real-time will have multiple
+                    touchpoints for offshoring.
+                  </div>
+                  <div class="client-author">
+                    <div class="client-author-image">
+                      <img src="./images/img-client.png" alt="" />
+                    </div>
+                    <div class="client-author-content">
+                      <div class="client-author-name">Zoltan Nemeth</div>
+                      <div class="client-author-position">
+                        CEO of Pixler Lab
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="client-author-content">
-                  <div class="client-author-name">Zoltan Nemeth</div>
-                  <div class="client-author-position">CEO of Pixler Lab</div>
+                <div class="client-item">
+                  <div class="client-rating mb-30">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <div class="client-title mb-30">
+                    User friendly & Customizable
+                  </div>
+                  <div class="client-desc mb-60">
+                    Bring to the table win-win survival strategies to ensure
+                    proactive domination. At the end of the day, going forward,
+                    a new normal that has evolved from generation X is on the
+                    runway heading towards a streamlined cloud solution. User
+                    generated content in real-time will have multiple
+                    touchpoints for offshoring.
+                  </div>
+                  <div class="client-author">
+                    <div class="client-author-image">
+                      <img src="./images/img-client.png" alt="" />
+                    </div>
+                    <div class="client-author-content">
+                      <div class="client-author-name">Zoltan Nemeth</div>
+                      <div class="client-author-position">
+                        CEO of Pixler Lab
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- <div class="client-action">
+            <button class="btn-circle arrow-left">
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </button>
+            <button class="btn-circle arrow-right">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div> -->
         </div>
       </section>
       <section class="faq">
@@ -557,7 +612,7 @@
       <!-- Footer -->
       <footer class="footer">
         <div class="footer-logo">
-          <img src="./images/logo.png" alt="" />
+          <img src="./images/logo2.png" alt="" />
         </div>
         <div class="footer-link">
           <ul class="footer-list">
@@ -587,6 +642,18 @@
         </div>
       </footer>
     </div>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

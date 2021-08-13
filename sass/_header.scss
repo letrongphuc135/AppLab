@@ -7,6 +7,10 @@
     align-items: center;
   }
 
+  .close-menu {
+    display: none;
+  }
+
   @media screen and (max-width: 767px) {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -24,7 +28,7 @@
       row-gap: 50px;
       align-items: baseline;
       padding-top: 100px;
-
+      z-index: 10000;
       &-item {
         margin-left: 0px;
         a {
@@ -40,27 +44,21 @@
       &.is-active {
         transform: translateX(0);
         width: 60%;
-        & + .hambuger a:first-child {
-          display: none;
-        }
-        & + .hambuger a:last-child {
+        .close-menu {
           display: inline-block;
+          position: absolute;
+          top: 10px;
+          right: 20px;
+          font-size: 40px;
+          color: white;
         }
-      }
-
-      & + .hambuger a:last-child {
-        display: none;
-      }
-      & + .hambuger a:first-child {
-        display: inline-block;
       }
     }
 
     .hambuger {
       font-size: 30px;
       color: #c5c5c5;
-      z-index: 2;
-      a{
+      a {
         color: #c5c5c5;
       }
     }

@@ -4,11 +4,9 @@
   &-container {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
   }
   &-img {
     transform: translateX(-75px);
-    flex-shrink: 0;
   }
   &-content {
     padding-left: 40px;
@@ -17,6 +15,10 @@
 
   @media screen and (max-width: 767px) {
     padding-top: 50px;
+
+    &-container {
+      flex-wrap: wrap;
+    }
     &-img {
       width: 100%;
       transform: none;
