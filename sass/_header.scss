@@ -11,7 +11,7 @@
     display: none;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     padding-top: 30px;
     padding-bottom: 30px;
     .menu {
@@ -63,7 +63,7 @@
       }
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 991px) {
     .hambuger {
       display: none;
     }
