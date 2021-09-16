@@ -323,6 +323,11 @@ button {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 1023px) {
+  .hero-image {
+    flex-shrink: 1;
+  }
+}
 @media screen and (max-width: 767px) {
   .hero-container {
     flex-direction: column;
@@ -431,6 +436,12 @@ button {
   color: #242f51;
 }
 
+@media screen and (max-width: 1023px) {
+  .feature-img {
+    width: 50%;
+    transform: translateX(-10px);
+  }
+}
 @media screen and (max-width: 767px) {
   .feature {
     margin-top: 50px;
@@ -533,6 +544,11 @@ button {
 .intergration-content {
   padding-left: 40px;
   max-width: 420px;
+}
+@media screen and (max-width: 1023px) {
+  .intergration-img {
+    transform: translateX(10px);
+  }
 }
 @media screen and (max-width: 767px) {
   .intergration {
@@ -685,6 +701,9 @@ button {
     width: 100%;
     position: relative;
     transform: none;
+  }
+  .built-action {
+    text-align: center;
   }
 }
 .price {
@@ -851,6 +870,7 @@ button {
   background-color: #f5f7fa;
   padding: 25px 50px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .faq-item-header {
   display: flex;
@@ -887,6 +907,9 @@ button {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+.download-item {
+  cursor: pointer;
 }
 .download-content {
   max-width: 55%;

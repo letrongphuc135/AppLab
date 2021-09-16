@@ -17,7 +17,7 @@
     pointer-events: none;
   }
 
-  &-image{
+  &-image {
     flex-shrink: 0;
   }
   &-top {
@@ -60,6 +60,14 @@
 
   &-action {
     margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hero {
+    &-image {
+      flex-shrink: 1;
+    }
   }
 }
 
